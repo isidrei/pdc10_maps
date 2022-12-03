@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    
+</head>
+<style> #map { height: 1080px; width:2000px; } </style>
+
+<body>
+    <div id="map"></div>
+    <script> 
+    var map = L.map('map').setView([15.14571,120.59421], 13);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+
+
+
+    var circle = L.circle([15.14571,120.59421], {
+    color: 'red',
+    fillOpacity: 0.5,
+    radius: 300
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([15.14571,120.59421])
+    .setContent("You are here!")
+    .addTo(map);
+
+    var circle = L.circle([41.8903,12.4916], {
+    color: 'blue',
+    fillOpacity: 0.5,
+    radius: 300
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([41.8903,12.4916])
+    .setContent("The Colosseum, Rome, Italy")
+    .addTo(map);
+
+    var circle = L.circle([40.1985,117.6045], {
+    color: 'Green',
+    fillOpacity: 0.5,
+    radius: 300
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([40.1985,117.6045])
+    .setContent("Great Wall, China")
+    .addTo(map);
+    
+    var circle = L.circle([27.17497,78.04229], {
+    color: 'purple',
+    fillOpacity: 0.5,
+    radius: 300
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([27.17497,78.04229])
+    .setContent("Taj Mahal, India")
+    .addTo(map);
+
+    var circle = L.circle([-22.95178,-43.21069], {
+    color: 'pink',
+    fillOpacity: 0.5,
+    radius: 300
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([-22.95178,-43.21069])
+    .setContent("Christ the Redeemer, Brazil")
+    .addTo(map);
+
+    var circle = L.circle([-13.16288,-72.54543], {
+    color: 'orange',
+    fillOpacity: 0.5,
+    radius: 300
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([-13.16288,-72.54543])
+    .setContent("Machu Picchu, Peru")
+    .addTo(map);
+
+    var circle = L.circle([-13.16288,-72.54543], {
+    color: 'orange',
+    fillOpacity: 0.5,
+    radius: 300
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([-13.16288,-72.54543])
+    .setContent("Machu Picchu, Peru")
+    .addTo(map);
+
+    var circle = L.circle([20.6832,-88.5685], {
+    color: 'cyan',
+    fillOpacity: 0.5,
+    radius: 300
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([20.6832,-88.5685])
+    .setContent("Chichén Itzá, Mexico")
+    .addTo(map);
+
+    var circle = L.circle([30.3255,35.0189], {
+    color: 'brown',
+    fillOpacity: 0.5,
+    radius: 800
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([30.3255,35.0189])
+    .setContent("Petra, Jordan")
+    .addTo(map);
+
+    var circle = L.circle([11.1787,119.3888], {
+    color: 'aquamarine',
+    fillOpacity: 0.5,
+    radius: 800
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([11.1787,119.3888])
+    .setContent("El Nido Palawan, Philippines")
+    .addTo(map);
+    
+    var circle = L.circle([35.7018,139.7742], {
+    color: 'grey',
+    fillOpacity: 0.5,
+    radius: 800
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([35.7018,139.7742])
+    .setContent("Akihabara, Japan")
+    .addTo(map);
+
+    var circle = L.circle([37.5685,126.9456], {
+    color: 'Yellow',
+    fillOpacity: 0.5,
+    radius: 2000
+    }).addTo(map);
+    var popup = L.popup()
+    .setLatLng([37.5685,126.9456])
+    .setContent("Seoul, Korea")
+    .addTo(map);
+    
+//     var polyline_latlngs = [
+//     [[66.93, 132.01],
+//      [64.92, 52.03],
+//      [10.3392, 124.8537],
+//      [9.3392, 124.8537],
+//      [9.3392, 123.8537],
+//      [8.3392, 124.8537]
+//     ]
+// ]
+// .addTo(map);
+var polyline = L.polyline([
+        [60.9,-43.6],
+        [83.2,-30.2],
+        [79,-98],
+        [44,-57],
+        [31,-83],
+        [68,-160],
+       
+        
+       
+    ]).addTo(map);
+    
+    
+    
+    
+    
+    </script>
+
+
+</body>
+
+
+
+
+
+
+</html>
